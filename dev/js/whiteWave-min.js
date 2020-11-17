@@ -1,0 +1,1 @@
+import{gsap}from"gsap";export function whiteWaveAnimation(){gsap.timeline().fromTo("#Orange",{scale:0},{scale:8,duration:2,rotation:360,ease:".easeNone",repeat:-1,paused:!1,transformOrigin:"center"})}

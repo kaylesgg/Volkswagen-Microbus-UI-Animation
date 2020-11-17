@@ -1,0 +1,23 @@
+/* =============
+    Demo
+============= */
+#logo-container{
+    display: grid;
+    grid-template-columns: auto 50% auto;
+    grid-template-areas: ". logo .";
+
+    >div{
+        grid-area: logo;
+    }
+}
+// #content{
+//     display: grid;
+//     grid-template-columns: auto 50% auto;
+//     grid-template-areas: ". clip .";
+
+//     >clipPath{
+//         grid-area: clip;
+//     }
+// }
+
+
