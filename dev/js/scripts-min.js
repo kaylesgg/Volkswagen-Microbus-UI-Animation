@@ -1,0 +1,1 @@
+import{GSDevTools}from"gsap/GSDevTools";import{gsap}from"gsap";import{MorphSVGPlugin}from"gsap/MorphSVGPlugin";gsap.registerPlugin(MorphSVGPlugin),gsap.registerPlugin(GSDevTools);const MainTL=gsap.timeline({paused:!0});MainTL.play();
