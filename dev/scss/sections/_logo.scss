@@ -7,7 +7,18 @@
     grid-template-areas: ". logo .";
 
     >div{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         grid-area: logo;
+        
+
+        svg{
+            width: 100% ;
+            overflow: hidden;
+            border: red solid 1px;
+        }
     }
 }
 // #content{

@@ -4,7 +4,7 @@ import {MorphSVGPlugin} from "gsap/MorphSVGPlugin";
 gsap.registerPlugin(MorphSVGPlugin);
 gsap.registerPlugin(GSDevTools);
 
-
+GSDevTools.create();
 
 
 const MainTL = gsap.timeline({paused: true})
