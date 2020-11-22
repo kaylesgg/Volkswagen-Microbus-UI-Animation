@@ -384,4 +384,12 @@ textarea {
   grid-template-columns: auto 70% auto;
   grid-template-areas: ". logo ."; }
   #logo-container > div {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-area: logo; }
+    #logo-container > div svg {
+      width: 100%;
+      overflow: hidden;
+      border: red solid 1px; }
