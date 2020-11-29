@@ -37,7 +37,7 @@ export function musicAnimation(){
  musicTL.to ("#blueMusic", {alpha:0})
  musicTL.from ("#musicOp",{alpha:0, duration:2},"-=1")
  musicTL.from ("#album",{alpha:0},"-=1")
- musicTL.to ("#song",{x:350, repeat: -1, duration: 3, ease: "none"}, "-=2")
+ musicTL.to ("#song",{x:350, repeat: 1, duration: 3, ease: "none"}, "-=2")
 }
 
 export function batteryAnimation(){ 
