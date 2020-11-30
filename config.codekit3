@@ -9,6 +9,17 @@
 	],
 "creatorBuild": "32001",
 "files": {
+	"/assets/1x/Asset 1.png": {
+		"ft": 32768,
+		"iS": 9193,
+		"oA": 0,
+		"oAP": "/assets/1x/Asset 1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/SVG.sketch": {
 		"cB": 0,
 		"ft": 8192,
@@ -46,12 +57,36 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/content/logo-loader/logo-img.kit": {
+	"/dev/content/dash/battery.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/content/logo-loader/logo-img.html",
+		"oAP": "/dev/content/dash/battery.html",
+		"oF": 0
+		},
+	"/dev/content/dash/gear.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/dash/gear.html",
+		"oF": 0
+		},
+	"/dev/content/dash/img.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/dash/img.html",
+		"oF": 1
+		},
+	"/dev/content/dash/music.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/dash/music.html",
 		"oF": 0
 		},
 	"/dev/content/logo.kit": {
@@ -60,6 +95,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/content/logo.html",
+		"oF": 0
+		},
+	"/dev/content/open_animation/waves.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/open_animation/waves.html",
 		"oF": 0
 		},
 	"/dev/global/head.kit": {
@@ -91,7 +134,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/js/dashAnimation-min.js",
 		"oF": 0,
 		"sC": 3,

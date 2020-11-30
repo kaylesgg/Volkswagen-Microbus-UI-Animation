@@ -10,9 +10,9 @@ gsap.registerPlugin(GSDevTools);
 GSDevTools.create();
 
 import {logoMorphAnimation} from "./logoMorph";
-// import {waveAnimation} from "./logoMorph"
-// import {gearAnimation} from "./dashAnimation"
-// import {musicAnimation} from "./dashAnimation"
+import {waveAnimation} from "./logoMorph";
+import {gearAnimation} from "./dashAnimation";
+import {musicAnimation} from "./dashAnimation";
 // import {batteryAnimation} from "./dashAnimation"
 // import {secondaryAnimation} from "./dashAnimation"
 
@@ -20,9 +20,10 @@ import {logoMorphAnimation} from "./logoMorph";
 const MainTL = gsap.timeline();
     
     MainTL
-        .add(logoMorphAnimation());
-        // .add(gearAnimation());
-        // .add (musicAnimation(),"-=4");
+        .add(logoMorphAnimation())
+        .add(waveAnimation())
+        .add(gearAnimation())
+        .add (musicAnimation());
         // .add (batteryAnimation());
         // .add(secondaryAnimation());
         // .play()
