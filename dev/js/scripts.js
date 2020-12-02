@@ -13,8 +13,9 @@ import {logoMorphAnimation} from "./logoMorph";
 import {waveAnimation} from "./logoMorph";
 import {gearAnimation} from "./dashAnimation";
 import {musicAnimation} from "./dashAnimation";
-// import {batteryAnimation} from "./dashAnimation"
-// import {secondaryAnimation} from "./dashAnimation"
+import {batteryAnimation} from "./dashAnimation"
+import {secondaryAnimation} from "./dashAnimation"
+import {speedometerAnimation} from "./dashAnimation"
 
 
 const MainTL = gsap.timeline();
@@ -23,9 +24,10 @@ const MainTL = gsap.timeline();
         .add(logoMorphAnimation())
         .add(waveAnimation())
         .add(gearAnimation())
-        .add (musicAnimation());
-        // .add (batteryAnimation());
-        // .add(secondaryAnimation());
+        .add (musicAnimation())
+        .add (batteryAnimation())
+        .add(secondaryAnimation())
+        .add(speedometerAnimation());
         // .play()
 
 
