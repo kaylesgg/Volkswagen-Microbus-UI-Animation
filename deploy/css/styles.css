@@ -391,5 +391,4 @@ textarea {
     grid-area: logo; }
     #logo-container > div svg {
       width: 100%;
-      overflow: hidden;
-      border: red solid 1px; }
+      overflow: hidden; }
