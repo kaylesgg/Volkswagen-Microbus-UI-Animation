@@ -21,23 +21,23 @@ const speedometerTL= gsap.timeline();
 
 
 export function gearAnimation(){
-gearTL.from ("#gearShift", {alpha: 0, duration:1, ease: "bounce"}, "+=11")
- gearTL.fromTo ("#gearContainer", {y:600, alpha: 0}, {y:0, alpha:1, duration: 4});
+ gearTL.from ("#gearShift", {alpha: 0, duration:1}, "+=8");
+ gearTL.fromTo ("#gearContainer", {y:600, alpha: 0}, {y:0, alpha:1, duration: 2});
  gearTL.from ("#Pg",{alpha:0, y:-60}) ;
  gearTL.from ("#Rg",{alpha:0, y:-90},"-=.4");
  gearTL.from ("#Dg",{alpha:0, y:-120},"-=.4");
  gearTL.from ("#Ng",{alpha:0, y:-180},"-=.4");
  gearTL.from ("#Tg",{alpha:0, y:-240},"-=.4");
  gearTL.from ("#Lg",{alpha:0, y:-300},"-=.4");
- gearTL.to ("#gearStroke", {drawSVG:"100%", duration:2});
- gearTL.from ("#blueFill", {alpha: 0, duration: 2}, "-=2");
+ gearTL.fromTo ("#gearStroke",{drawSVG:"0%"},{duration: 1.5, drawSVG: "100%"});
+ gearTL.from ("#gearSelect", {alpha: 0, duration: 1});
 
 
 
 }
 
 export function musicAnimation(){
- musicTL.from ("#leftContainer", {alpha: 0, duration:.5}, "+=11")
+ musicTL.from ("#leftContainer", {alpha: 0, duration:.5}, "+=6")
  musicTL.fromTo ("#leftContainer",{scale: .5},{scale: 1, duration: 2}); 
  musicTL.from ("#nav",{alpha:0, x:-90});
  musicTL.from ("#phone",{alpha:0, x:-90});
@@ -51,7 +51,7 @@ export function musicAnimation(){
 }
 
 export function batteryAnimation(){ 
-    batteryTL.from ("#f1", {alpha: 0, duration: .5, ease:"bounce"}, "+=11");
+    batteryTL.from ("#f1", {alpha: 0, duration: .5, ease:"bounce"}, "+=6");
     batteryTL.from ("#f2", {alpha: 0, duration: .5, ease:"bounce"});
     batteryTL.from ("#f3", {alpha: 0, duration: .5, ease:"bounce"});
     batteryTL.from ("#f4", {alpha: 0, duration: .6, ease:"bounce"});
@@ -62,15 +62,19 @@ export function batteryAnimation(){
 }
 
 export function secondaryAnimation(){
-    secondaryTL.from ("#logoConst", {alpha: 0, duration:1}, "+=13");
+    secondaryTL.from ("#logoConst", {alpha: 0, duration:2, ease: "bounce"}, "+=8");
     secondaryTL.from ("#weather", {alpha: 0, duration:1},"-=1");
     secondaryTL.from ("#time", {alpha: 0, duration:1}, "-=1");
 
 }
 
 export function speedometerAnimation(){
-    speedometerTL.from ("#speedometer", {alpha: 0, duration:.8}, "+=9");
-    speedometerTL.to ("#orangeStroke",{duration:2, drawSVG: "100%", ease:"none"});
+    speedometerTL.fromTo ("#orangeStroke",{drawSVG:"0%"},{duration: 1.5, drawSVG: "100%"}, "+=4");
+    speedometerTL.from ("#orangeSpeed", {alpha: 0, duration:.8});
+    speedometerTL.fromTo ("#whiteInsideStroke",{drawSVG:"0%"},{duration: 1, drawSVG: "100%"});
+    speedometerTL.from (".txt", {alpha: 0, duration:.4, ease: "bounce"});
+
+
     
     return speedometerTL;
 }
